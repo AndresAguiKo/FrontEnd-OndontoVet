@@ -4,30 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css"/>
-    <title>Odontovet</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title> Ondotovet</title>
+
+<!-- box icons / website to bring icons-->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo"><a href="#">Dra. Gabriela Arias</a></div>
-        <ul class="links">
-            <li><a href="hero">Home</a></li>
-            <li><a href="Sobre">Sobre</a></li>
-            <li><a href="Servicios">Servicios</a></li>
-            <li><a href="Contacto">Contacto</a></li>    
-        </ul>
-        
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </div>
+    <header class="header">
+        <a href="#" class="logo">Dra Gabriela Arias</a>
 
-    <div class="dropdown_menu">
-        <li><a href="hero">Home</a></li>
-            <li><a href="About">About</a></li>
-            <li><a href="Services">Services</a></li>
-            <li><a href="Contact">Contact</a></li> 
-    </div>
+        <i class='bx bx-menu' id="menu-icon"></i>    <!-- actual menu icon-->
+
+        <nav class="navbar">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        
+    </header>
+    <!-- home section design-->
+    <section class="inicio" id="inicio">
+        <div class="inicio-contenido">
+            <h3>Hola!, Soy</h3>
+            <h1>Gabriela Arias</h1>
+            <h3>Y soy <span>Dra Veterinaria</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nostrum molestiae aperiam. Dolores ab, <br>
+                tempora obcaecati aperiam maiores libero reprehenderit distinctio in ipsam? Ad, vitae! At corrupti deleniti cum sapiente!</p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-whatsapp-square' ></i></a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="photos/lolatest2.png" alt="">
+        </div>
+
+    </section>
+ 
+    <script defer="defer" src="js/script.js"></script>
+    
 </body>
 </html>
