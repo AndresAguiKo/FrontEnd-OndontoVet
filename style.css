@@ -1,122 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --bg-color: #41a3b4;
+    --second-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
 body {
-    background: url('../photos/beautiful-pet-portrait-dog.jpg') no-repeat center center/cover;
+    background: url("../photos/background.jpg") repeat center center/cover;
     height: 100vh;
     overflow: hidden;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
+    color: var(--text-color);
 }
 
-a:hover{
-    color: lightskyblue;
-}
-/* HEADER */
-header {
-    position: relative;
-    padding: 0 2rem;
+body {
+    cursor: url("../photos/icons8-dog-bone-48.png"), auto;
 }
 
-.navbar{
-    width: 95%;
-    height: 60px;
-    max-width: 1200%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+/* arrange text  */
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
-.navbar .logo a{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 
-.navbar .links {
-    display: flex;
-    gap: 4rem;
-}
+/* Header */
 
-.navbar .toggle_btn {
-    color: lightskyblue;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.action_btn{
-    background-color: lightskyblue;
-    color: skyblue;
-    padding: 0.9rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-}
-
-.action_btn:hover{
-    scale: 1.05;
-    color: skyblue;
-}
-/* Dropdown */
-.dropdown_menu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu.show {
-    display: block;
-    height: 240px;
-}
-
-.dropdown_menu li {
-    padding: 0.7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown_menu .action.btn {
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .navbar .links,
-    .navbar .action_btn {
-        display: none;
-    }
+/* Logo */
 
-    .navbar .toggle_btn {
-        display: block;
-    }
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;    /* default or pointer type of cursor */
+}
 
-    .dropdown_menu.show {
-        display: block;
-        height: auto;
-    }
+
+/* Navigation */
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{        /* shows the active page */
+    color: var(--main-color);
+}
+
+
+/* Menu icon */
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+    
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img{
+    width: 25vw;
+
+} 
+    
+
+.inicio-contenido h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.inicio-contenido h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.inicio-contenido h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.inicio-contenido p{
+    font-size: 1.6rem;
+}
+
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);;
+
 }
