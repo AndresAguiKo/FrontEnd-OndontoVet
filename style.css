@@ -12,10 +12,13 @@
 }
 
 :root{
-    --bg-color: #41a3b4;
-    --second-color: #323946;
+    --bg-color: #47a0ac;
+    --second-color: ##e1b7c7;
     --text-color: #fff;
     --main-color: #0ef;
+    --third-color: #444252;
+    --logo-color: #47a0ac;
+    --menu-color: #2f4446;
 
 }
 
@@ -25,14 +28,20 @@ html {
 }
 
 body {
-    background: url("../photos/background.jpg") repeat center center/cover;
+    background: url("../photos/pexels-laura-stanley-2666145.jpg") repeat center center/cover;
+    background-color: #47a0ac;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll; 
     color: var(--text-color);
 }
 
+body::-webkit-scrollbar {
+    width: .01rem;
+    height: .01rem;
+}
+
 body {
-    cursor: url("../photos/icons8-dog-bone-48.png"), auto;
+    cursor: url("../photos/icons8-dog-bone-48.pn"), auto;
 }
 
 
@@ -79,7 +88,7 @@ section{
 
 .navbar a:hover,
 .navbar a.active{        /* shows the active page */
-    color: var(--main-color);
+    color: var(--menu-color);
 }
 
 
@@ -94,12 +103,13 @@ section{
 
 .inicio {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-right: 60rem;
 }
 
 .home-img img{
-    width: 25vw;
+    width: 0vw;
 
 } 
     
@@ -108,6 +118,21 @@ section{
     font-size: 3.2rem;
     font-weight: 700;
 }
+
+
+/* cnage color Dra Veterinaria  */
+
+.inicio-contenido h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+
+/* ---  */
+
 
 .inicio-contenido h1{
     font-size: 5.6rem;
@@ -123,6 +148,7 @@ section{
 
 .inicio-contenido p{
     font-size: 1.6rem;
+    
 }
 
 
@@ -133,10 +159,10 @@ section{
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid var(--logo-color);
     border-radius: 50%;
-    font-size: 2rem;
-    color: var(--main-color);
+    font-size: 3rem;
+    color: var(--logo-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
@@ -147,3 +173,96 @@ section{
     box-shadow: 0 0 1rem var(--main-color);;
 
 }
+
+
+.sobre{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2rem;
+    background: url("../photos/pexels-anna-tarazevich-7904477.jpg") repeat center center/cover;
+}
+
+.sobre-img img{
+    width: 30vw;
+
+} 
+
+/* section 2 / page 2 */
+
+.sobre-contenido{
+    padding-left: 55rem;
+}
+
+.sobre-contenido h2{           /* About me */
+    font-size: 5.6rem; 
+    text-align: left;
+    line-height: 1.2;
+}
+
+.sobre-contenido h3{            /* Dra Vete */
+    font-size: 3.2rem;
+    text-align: left;
+    
+}
+
+.sobre-contenido p{            /* Description */
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/* servicios */
+
+ 
+.heading{
+    font-size: 5.6rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.servicios h2{
+    margin-bottom: 5rem;
+}
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contenedor-servicios .caja-servicios{
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem; 
+    border-radius: 2rem;
+    text-align: center;
+    border: .3rem solid var(--logo-color);
+    transition: 0.5s ease;
+}
+
+.contenedor-servicios .caja-servicios:hover{
+    border-color: var(--main-color);
+    transform: scale(1.07);
+
+}
+
+
+.caja-servicios i{
+    font-size: 7rem;
+    color: var(--main-color);
+
+}
+
+.caja-servicios h3 {
+    font-size: 2.5rem;
+
+}
+
+.caja-servicios p {
+    font-size: 1.4rem;
+    margin: 1rem 0 3rem;
+    
+}
+
