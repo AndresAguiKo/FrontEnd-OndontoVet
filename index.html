@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css"/>
     <title> Ondotovet</title>
@@ -16,10 +14,14 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
+
 </head>
 <body>
+    
     <header class="header">
-        <a href="#" class="logo">Dra Gabriela Arias</a>
+        <img src="photos/logos/logo1.PNG" alt="" class="nav-logo">
+        <!--<a href="#" class="logo">Dra Gabriela Arias</a>-->
+        
 
         <i class='bx bx-menu' id="menu-icon"></i>    <!-- actual menu icon-->
 
@@ -27,7 +29,7 @@
             <a href="#inicio" class="active">Inicio</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicios">Servicios</a>
-            <a href="#contacto">Comentarios</a>
+            <a href="#comentarios">Testimonios</a>
             <a href="#contacto">Contacto</a>
         </nav>
         
@@ -37,18 +39,23 @@
         <div class="inicio-contenido">
             <h3>Bienvenidos a</h3>
             <h1>Odontovet!</h1>
-            <h3>Soy la <span>Dra Gabriela Arias</span></h3>
-            <p>Mi objetivo es brindarles a ustedes y a sus adorables compañeros peludos la mejor atención y cuidado. En este espacio virtual, encontrarán información valiosa, consejos prácticos y recursos útiles para mantener a sus mascotas felices y saludables. Me emociona de poder acompañarlos en este viaje, responder a sus preguntas y ayudarles a crear una relación duradera y llena de amor con sus fieles amigos.!</p>
+            <h3>Soy la <span>Dra. Gabriela Arias Corrales</span></h3>
+            <p>Mi objetivo es brindarles a ustedes y a sus adorables compañeros peludos la mejor
+                 atención y cuidado. En este espacio virtual, encontrarán información valiosa, 
+                 consejos prácticos y recursos útiles para mantener a sus mascotas felices y 
+                 saludables. Me emociona de poder acompañarlos en este viaje, responder a sus 
+                 preguntas y ayudarles a crear una relación duradera y llena de amor con sus 
+                 fieles amigos!</p>
 
             <div class="social-media">
-                <a href="https://m.facebook.com/OdontovetCR"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://instagram.com/odontovetcr?igshid=NTc4MTIwNjQ2YQ=="><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="https://wa.me/50686235569"><i class='bx bxl-whatsapp-square' ></i></a>
+                <a href="https://m.facebook.com/OdontovetCR" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://instagram.com/odontovetcr?igshid=NTc4MTIwNjQ2YQ=="target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://wa.me/50686235569"target="_blank"><i class='bx bxl-whatsapp-square' ></i></a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="photos/lolatest2.png" alt="">
+            <img src="photos/lolatest.png" alt="">
         </div>
 
     </section>
@@ -72,55 +79,217 @@
 
     </section>
 
+    <!-- third page services-->
 
     <section class="servicios" id="servicios">
-        <h2 class="heading"> Nuestro <span>Servicios</span></h2>
+        <h2 class="heading"> Mis <span>Servicios</span></h2>
 
         <div class="contenedor-servicios">
-            <div class="caja-servicios">
-                <i class='bx bxs-dog'></i>
-                <h3>Ondontologia</h3>
-                <p>La odontología canina es una especialidad relativamente nueva en veterinaria. 
-                    Es uno de los campos con menos clínicos especializados. 
-                </p>
-
-                <a href="#" class="btn">Leer más</a>
+            <div class="contenedor-servicios-row">
+                <div class="caja-servicios">
+                    <img src="photos/tooth2.png" alt="">
+                    <h3>Limpieza Dental</h3>
+                    <p>Elimina eficazmente el sarro y la placa acumulados, preservando la 
+                        salud bucal de tu mascota. Con técnicas suaves, dejamos sus dientes limpios y su aliento fresco. 
+                    </p>
+    
+                    <!--<a href="#" class="btn">Leer más</a>-->
+    
+                </div>
+    
+    
+                <div class="caja-servicios">
+                    <img src="photos/tooth.png" alt="">
+                    <h3>Tratamiento Periodontal</h3>
+                    <p> El tratamiento Periodontal especializado previene y trata enfermedades de las encías, 
+                        asegurando la salud bucal a largo plazo. Eliminando placa bacteriana y cálculo, 
+                        protegiendo la salud de tu mascota.
+                    </p>
+    
+                    <!--<a href="#" class="btn">Leer más</a>-->
+    
+                </div>
+    
+        
+    
+                <div class="caja-servicios">
+                    <i class='bx bxs-injection'></i>
+                    <h3>Exámenes de Sangre</h3>
+                    <p>Los exámenes de sangre ofrecen información vital sobre la salud de tu mascota. 
+                        Con resultados precisos y rápidos, proporcionamos un diagnóstico temprano y un 
+                        seguimiento efectivo.
+                    </p>
+    
+                    <!--<a href="#" class="btn">Leer más</a>-->
+    
+                </div>
 
             </div>
+            <div class="contenedor-servicios-row">
+                
+
+                <div class="caja-servicios">
+                    <i class='bx bx-home'></i>
+                    <h3>Atención a Domicilio</h3>
+                    <p>Atención veterinaria en la comodidad de tu hogar. Cuidado experto y cercano para tus mascotas, 
+                        sin estrés ni desplazamientos. 
+                    </p>
+    
+                     <!--<a href="#" class="btn">Leer más</a>-->
+    
+                </div>
+
+                <div class="caja-servicios">
+                    <i class='bx bxs-dog'></i>
+                    <i class='bx bxs-cat bx-flip-horizontal'></i>
+                    <h3>Consulta Odontológica</h3>
+                    <p>La odontología canina es una especialidad relativamente nueva en veterinaria. 
+                        Es uno de los campos con menos clínicos especializados. 
+                    </p>
+    
+                    <!--<a href="#" class="btn">Leer más</a>-->
+    
+                </div>
+    
+            </div>   
+
+        </div>
+
+    
+
+    </section>
+
+    <!-- fourth page Comentarios-->
 
 
-            <div class="caja-servicios">
-                <i class='bx bx-home'></i>
-                <h3>Atención a Domicilio</h3>
-                <p>La odontología canina es una especialidad relativamente nueva en veterinaria. 
-                    Es uno de los campos con menos clínicos especializados. 
-                </p>
+    <section class="comentarios" id="comentarios">
+        <h2 class="heading"><span>Testimonios!</span></h2>
 
-                <a href="#" class="btn">Leer más</a>
-
-            </div>
-
-            <div class="caja-servicios">
-                <i class='bx bxs-injection'></i>
-                <h3>Laboratorio</h3>
-                <p>La odontología canina es una especialidad relativamente nueva en veterinaria. 
-                    Es uno de los campos con menos clínicos especializados. 
-                </p>
-
-                <a href="#" class="btn">Leer más</a>
-
-            </div>
-
+        <div class="contenedor-comentarios">
             
+            <div class="caja-comentarios">
+                <img src="photos/comen1.jpg" alt="">
+                <div class="capa-comentario">
+                    <h4>Lola</h4>
+                    <p>La Dra. Gabriela fue increíblemente cálida y amable, 
+                        y estoy más que feliz de decir que mi perrita está completamente 
+                        curada gracias a su cuidado excepcional. 
+                        ¡No podría estar más agradecido!
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="caja-comentarios">
+                <img src="photos/comen2.jpg" alt="">
+                <div class="capa-comentario">
+                    <h4>Toby</h4>
+                    <p>No puedo expresar lo suficiente cuánto aprecio el servicio de la Dra. Veterinaria. 
+                        No solo curó a mi gatito, sino que también transmitió una energía tan positiva y 
+                        amorosa que hizo que toda la experiencia fuera maravillosa.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="caja-comentarios">
+                <img src="photos/comen3.jpg" alt="">
+                <div class="capa-comentario">
+                    <h4>Astro</h4>
+                    <p>La Dra. Veterinaria es una verdadera joya. Su pasión por los animales se refleja 
+                        en su impecable atención y cuidado. Gracias a ella, mi peludo amigo está sano y 
+                        feliz de nuevo. No podría pedir más.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="caja-comentarios">
+                <img src="photos/comen4.jpg" alt="">
+                <div class="capa-comentario">
+                    <h4>Duque</h4>
+                    <p>No puedo contener mi alegría por el servicio de la Dra. Veterinaria. Su empatía y 
+                        compasión genuina no solo sanaron a mi mascota, sino que también me dieron 
+                        tranquilidad y confianza en todo momento. Es verdaderamente excepcional.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="caja-comentarios">
+                <img src="photos/comen5.jpg" alt="">
+                <div class="capa-comentario">
+                    <h4>Lorenzo</h4>
+                    <p>La Dra. Veterinaria es un tesoro escondido en el mundo veterinario. 
+                        Su amor por los animales se irradia en cada interacción y su habilidad para 
+                        curar es simplemente impresionante. Estoy eternamente agradecido por su ayuda 
+                        en la recuperación de mi mascota.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class="caja-comentarios">
+                <img src="photos/comen6.jpg" alt="">
+                <div class="capa-comentario">
+                    <h4>Newton</h4>
+                    <p>No tengo palabras suficientes para agradecer a la Dra. Veterinaria por su servicio 
+                        excepcional. Su enfoque amoroso y su conocimiento médico han resultado en la 
+                        recuperación completa de mi querido compañero peludo. Es una verdadera 
+                        profesional con un corazón de oro.
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2 class="heading">Contácta <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="caja-contacto">
+                <input type="texto" placeholder="Nombre Completo">
+                <input type="correo" placeholder="Direccion de Correo">
+            </div>
+
+            <div class="caja-contacto">
+                <input type="numero" placeholder="Numero Telefonico">
+                <input type="texto" placeholder="Lugar de Residencia">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="8" placeholder="Tu Mensaje"></textarea>
+            <input type="submit" value="Enviar" class="btn">
+
+        </form>
+
+
+
+
+    </section>
+
+    <footer class="pie-pagina">
+        <div class="pie-texto">
+            <p>Copyright &copy; 2023 by Gabriela  Arias | Todos los Derechos Reservados.</p>
+        </div>
+        
+        <div class="pie-icono">
+            <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
 
         </div>
 
 
-    </section>
+    </footer>
  
-    <script defer="defer" src="js/script.js"></script>
+    <script src="/script.js"></script>
     
 </body>
 </html>
+
+
 
 
